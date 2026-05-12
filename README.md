@@ -1,3 +1,3 @@
 #codigo para verificar el reporte de serenity
- mvn clean verify
+ -mvn clean verify
  

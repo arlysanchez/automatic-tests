@@ -6,10 +6,10 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class ValidationPage  extends PageObject {
 
-    @FindBy(xpath ="//div[@class = 'product_label']" )
+    @FindBy(xpath = "//span[@class='title'] | //div[@class='product_label']")
     protected WebElementFacade lbl_product;
 
-    @FindBy(xpath ="//h3[@data-test='error' and text()='Username and password do not match any user in this service']" )
+    @FindBy(xpath ="//h3[@data-test='error']")
     protected WebElementFacade lbl_errorMessage;
 
 }

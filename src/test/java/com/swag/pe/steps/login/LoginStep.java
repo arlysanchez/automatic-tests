@@ -16,7 +16,8 @@ public class LoginStep  extends LoginPage {
     }
     @Step("Click en el boton login")
     public void clickLogin(){
-        btn_login.click();
+
+        btn_login.waitUntilClickable().click();
     }
 
 

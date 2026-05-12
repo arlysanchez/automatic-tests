@@ -7,10 +7,13 @@ public class ValidationStep extends ValidationPage {
 
     @Step("Validar visualizacion del modulo del producto")
     public Boolean titleIsVisible(){
-        return lbl_product.isDisplayed();
+
+        return lbl_product.waitUntilVisible().isDisplayed();
     }
+
     @Step("Validar visualizacion del mensaje de error")
     public Boolean errorMessageIsDisplay(){
-        return lbl_errorMessage.isDisplayed();
+
+        return lbl_errorMessage.waitUntilVisible().isDisplayed();
     }
 }
